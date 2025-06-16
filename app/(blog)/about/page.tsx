@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Leaf, Heart, Globe } from "lucide-react";
@@ -10,11 +9,10 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+            <div className="space-y-8 lg:pr-8">
               <h1 className="text-5xl font-bold text-neutral-600 leading-tight">
-                Our Story: From Farm to
-                <span className="text-brand-600 block">Your Kitchen</span>
+                <span className="text-brand-600 block">Our Story</span>
               </h1>
               <p className="text-xl text-neutral-500 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -29,14 +27,16 @@ export default function AboutPage() {
                 laborum.
               </p>
             </div>
-            <div className="relative">
-              <Image
-                src="/HeroImage.webp?height=500&width=600"
-                alt="Margaret Johnson"
-                width={500}
-                height={400}
-                className="rounded-2xl shadow-2xl"
-              />
+            <div className="relative flex justify-center lg:justify-end">
+              <div className="relative">
+                <Image
+                  src="/HeroImage.webp?height=500&width=600"
+                  alt="Margaret Johnson"
+                  width={300}
+                  height={400}
+                  className="rounded-2xl shadow-2xl object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>

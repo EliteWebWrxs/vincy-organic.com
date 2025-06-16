@@ -1,5 +1,14 @@
 import Link from "next/link";
-import { Leaf, ShoppingBag, BookOpen, HelpCircle } from "lucide-react";
+import {
+  Leaf,
+  ShoppingBag,
+  BookOpen,
+  HelpCircle,
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+} from "lucide-react";
 
 export default function Footer() {
   return (
@@ -18,6 +27,32 @@ export default function Footer() {
               Explore the world of organic spices, sauces, and blends made to
               inspire your next dish.
             </p>
+            <div className="flex space-x-4">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-amber-500 transition-colors"
+              >
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-amber-500 transition-colors"
+              >
+                <Twitter className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-amber-500 transition-colors"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-amber-500 transition-colors"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+            </div>
           </div>
 
           {/* Shop */}
