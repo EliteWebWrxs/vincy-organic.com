@@ -30,7 +30,7 @@ const featuredProducts = [
     id: 3,
     name: "Some New Sauce",
     price: 16.99,
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/spices.png?height=300&width=300",
     rating: 4.7,
     reviews: 156,
     badge: "New",
@@ -40,12 +40,24 @@ const featuredProducts = [
 const categories = [
   {
     name: "Seasonings",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/spices.png?height=200&width=200",
     count: 2,
   },
-  { name: "Sauces", image: "/placeholder.svg?height=200&width=200", count: 10 },
-  { name: "Blends", image: "/placeholder.svg?height=200&width=200", count: 7 },
-  { name: "Salts", image: "/placeholder.svg?height=200&width=200", count: 8 },
+  {
+    name: "Sauces",
+    image: "/spices.png?height=200&width=200",
+    count: 10,
+  },
+  {
+    name: "Blends",
+    image: "/spices.png?height=200&width=200",
+    count: 7,
+  },
+  {
+    name: "Salts",
+    image: "/spices.png?height=200&width=200",
+    count: 8,
+  },
 ];
 
 export default function HomePage() {
