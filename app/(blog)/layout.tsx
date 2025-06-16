@@ -37,10 +37,7 @@ export async function generateMetadata(): Promise<Metadata> {
   }
   return {
     metadataBase,
-    title: {
-      template: `%s | ${title}`,
-      default: title,
-    },
+    title: "Vincy Organic Products",
     description: toPlainText(description),
     openGraph: {
       images: ogImage ? [ogImage] : [],
